@@ -1,134 +1,117 @@
 /* Elimina márgenes y rellenos predeterminados de todos los elementos, y usa box-sizing para incluir bordes y rellenos en el tamaño total del elemento. */
 *, *::before, *::after {
-    margin: 0; /* Quita los márgenes predeterminados de todos los elementos. */
-    padding: 0; /* Quita los rellenos predeterminados de todos los elementos. */
-    box-sizing: border-box; /* Incluye bordes y rellenos en el cálculo del tamaño del elemento. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Aplica una fuente cursiva, un interlineado uniforme y un color de fondo a todos los elementos. */
 * {
-    font-family: "Klee One", cursive; /* Establece la fuente "Klee One" con estilo cursivo. */
-    line-height: 1.6; /* Define un interlineado de 1.6 para mejorar la legibilidad. */
-    background-color: #e5cdee; /* Aplica un color de fondo liláceo. */
+    font-family: "Klee One", cursive;
+    line-height: 1.6;
+    background-color: #e5cdee;
 }
 
-/* Estiliza el encabezado con texto centrado y relleno. */
+/* Estios principales. */
 header {
-    text-align: center; /* Centra horizontalmente el texto del encabezado. */
-    padding: 20px; /* Agrega un espacio de 20px alrededor del contenido del encabezado. */
+    text-align: center;
+    padding: 20px;
 }
-
-/* Define el estilo del título principal dentro del encabezado. */
 header h1 {
-    font-size: 2rem; /* Establece un tamaño de fuente grande de 2rem para el título. */
-    color: #301e30; /* Aplica un color oscuro al texto del título. */
-    font-weight: bold; /* Hace que el título sea negrita. */
+    font-size: 2rem;
+    color: #301e30;
+    font-weight: bold;
 }
-
-/* Define el estilo de los párrafos en el encabezado. */
 header p {
-    font-size: 1rem; /* Establece un tamaño de fuente más pequeño de 1rem. */
-    color: #643f64; /* Aplica un color morado al texto. */
-    font-weight: bold; /* Hace que el texto sea negrita. */
+    font-size: 1rem;
+    color: #643f64;
+    font-weight: bold;
 }
 
 /* Estilo para líneas horizontales (hr). */
 hr {
-    width: 100%; /* Hace que la línea horizontal ocupe el ancho completo del contenedor. */
-    border-top: 2px solid #643f64; /* Define un borde superior de 2px con color morado. */
+    width: 100%;
+    border-top: 2px solid #643f64;
 }
 
-/* Estiliza la barra de navegación con relleno y margen. */
+/* Estiliza la barra de navegación */
 nav {
-    width: 20%; /* Establece que la barra de navegación ocupe el 20% del ancho del contenedor. */
-    padding: 10px; /* Agrega 10px de espacio dentro de la barra de navegación. */
-    margin: 20px; /* Agrega un espacio de 20px alrededor de la barra de navegación. */
+    width: 20%;
+    padding: 10px;
+    margin: 20px;
 }
-
-/* Elimina los estilos predeterminados de la lista en la navegación. */
 nav ul {
-    list-style: none; /* Quita los puntos de lista predeterminados. */
+    list-style: none;
 }
-
-/* Define un margen entre los elementos de la lista de navegación. */
 nav ul li {
-    margin: 10px 20px; /* Agrega un espacio de 10px verticalmente y 20px horizontalmente entre los elementos de la lista. */
+    margin: 10px 20px;
 }
-
-/* Estiliza los enlaces dentro de la navegación. */
 nav ul li a {
-    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces. */
-    color: #643f64; /* Establece un color morado para los enlaces. */
-    font-weight: bold; /* Aplica un peso de fuente en negrita. */
+    text-decoration: none;
+    color: #643f64;
+    font-weight: bold;
 }
 
-/* Define un contenedor principal que organiza los elementos en una fila horizontal. */
+/* Define un contenedor principal */
 #contenedor {
-    display: flex; /* Utiliza un diseño de flexbox para los elementos dentro del contenedor. */
-    flex-direction: row; /* Coloca los elementos en una fila horizontal. */
-    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible. */
+    display: flex; /* Utiliza un diseño de flexbox para los elementos dentro del contenedor */
+    flex-direction: row; /* Coloca los elementos en una fila horizontal */
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
 }
 
-/* Estiliza el área principal del contenido. */
 main {
     width: 80%; /* Establece que el contenido principal ocupe el 80% del ancho del contenedor. */
-    padding: 20px; /* Agrega un espacio de 20px alrededor del contenido principal. */
+    padding: 20px;
     display: flex; /* Aplica un diseño de flexbox. */
     flex-direction: column; /* Organiza los elementos en una columna. */
-    gap: 20px; /* Agrega un espacio de 20px entre los elementos de la columna. */
+    gap: 20px; /* Agrega un espacio entre los elementos */
 }
 
-/* Estiliza las secciones con un diseño flexible para que los elementos se distribuyan uniformemente. */
 section {
     display: flex; /* Utiliza flexbox para organizar los elementos de la sección. */
-    gap: 20px; /* Agrega un espacio de 20px entre los elementos. */
-    justify-content: space-between; /* Coloca los elementos con espacio uniforme entre ellos. */
+    gap: 20px;
+    justify-content: space-between;
 }
 
-/* Estiliza los contenedores dentro de las secciones. */
 section div {
     flex: 1; /* Hace que cada contenedor ocupe el mismo espacio dentro de la sección. */
-    text-align: center; /* Centra el contenido dentro de cada contenedor. */
-    margin: 0 auto; /* Centra los contenedores horizontalmente. */
-    padding: 20px; /* Agrega un espacio de 20px dentro de cada contenedor. */
-    border: 2px solid #643f64; /* Aplica un borde de 2px de color morado. */
-    border-radius: 20px; /* Redondea los bordes del contenedor con un radio de 20px. */
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #643f64;
+    border-radius: 20px;
 }
 
 /* Estiliza las imágenes dentro de los contenedores de las secciones. */
 section div img {
-    max-width: 100%; /* Asegura que las imágenes no superen el ancho del contenedor. */
-    width: 200px; /* Establece un ancho fijo de 200px para las imágenes. */
-    height: auto; /* Mantiene la proporción de las imágenes. */
-    border-radius: 10px; /* Aplica bordes redondeados a las imágenes con un radio de 10px. */
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Estiliza los párrafos dentro de los contenedores de las secciones. */
 section div p {
-    margin-top: 10px; /* Agrega un margen superior de 10px para separar el texto de la imagen. */
-    font-size: 0.9rem; /* Define un tamaño de fuente pequeño para los párrafos. */
-    color: #643f64; /* Aplica un color morado al texto. */
-    font-weight: bold; /* Hace que el texto sea negrita. */
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #643f64;
+    font-weight: bold;
 }
 
-/* Estiliza el pie de página (footer) con un fondo liláceo, texto morado y tamaño de fuente pequeño. */
+/* Estiliza el pie de página (footer) */
 footer {
-    background: #e5cdee; /* Establece un color de fondo liláceo para el pie de página. */
-    color: #643f64; /* Aplica un color morado al texto del pie de página. */
-    text-align: center; /* Centra el texto dentro del pie de página. */
-    font-size: small; /* Define un tamaño de fuente pequeño. */
-    font-weight: bold; /* Hace que el texto sea negrita. */
-    margin: 10px; /* Agrega un espacio de 10px alrededor del pie de página. */
+    background: #e5cdee;
+    color: #643f64;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    margin: 10px;
 }
-
-/* Define estilos específicos para las secciones del pie de página (dirección, copyright, redes sociales). */
 .address, .copi, .social {
     width: 30%; /* Hace que cada sección ocupe el 30% del pie de página. */
     display: inline-block; /* Coloca las secciones en línea horizontalmente. */
 }
-
-/* Estiliza los enlaces dentro de la sección de redes sociales del pie de página. */
 .social a {
-    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces. */
-    color: #643f64; /* Aplica un color morado a los enlaces. */
+    text-decoration: none;
+    color: #643f64;
 }
