@@ -45,6 +45,10 @@ En la página web podemos encontrar una estructura organizada, incluyendo encabe
 ```
 <br>
 
+## 📋 Adicional
+En mi perfil de [GitHub](https://github.com/beelenruiz) en el repositorio [actividad-maquetacionGRID](https://github.com/beelenruiz/actividad-maquetacionGRID) encontraras una página web con la misma apariencia que este repositorio pero con la maquetación realizada con Grid. Te aconsejo que le heches un vistazo ;) y veas las diferentes formas de maquetación usando CSS.
+<br>
+
 ## 👥 Autora
 **Belén Ruiz Morales**,  Estudiante de 2º DAW - DIV.
 
